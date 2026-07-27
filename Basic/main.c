@@ -114,7 +114,7 @@ int main(void)
   float deciNumber = 1.85;
   double PI = 3.14159;
   char Letter = 'N';
-  char NAME[] = "NitinDharmesh";
+  char NAME[50] = "";
 
   printf("%d \n", number);
   printf("%f\n", deciNumber);
@@ -204,12 +204,16 @@ int main(void)
   printf("Enter Your grade: ");
   scanf(" %c", &gradee);
 
+  
+
 
   printf("Nitin\n");
   printf("%d\n", Age);
   printf("%.1f\n",GPA);
 
+
+
+
+
   return 0; // it return this to the operating systeml
 }
-
-// Video: 1:02:02;
