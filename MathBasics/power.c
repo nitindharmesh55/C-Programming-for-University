@@ -2,20 +2,26 @@
 
 int main(void)
 {
-    int base, power, result = 1;
+    double base, result = 1;
+    int power;
 
     printf("Enter the base: ");
-    scanf("%d", &base);
+    scanf("%lf", &base);
 
     printf("Enter the power: ");
     scanf("%d", &power);
+    if(base == 0)
+    {
+        printf("Undefined\n");
+        return 0;
+    }
 
     for(int i = 1; i <= power; i++)
     {
        result *=  base ;
     }
 
-    printf("Result: %d\n", result);
+    printf("Result: %.4lf\n", result);
 
     return 0;
 }
