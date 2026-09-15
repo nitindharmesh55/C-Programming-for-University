@@ -1,23 +1,16 @@
-#include <stdio.h>
-int main(void)
+#include<stdio.h>
+int main()
 {
-    for(int i = 0; i < 5; i++)
-    {
-        for(int space = 5 - 1; space > i; space--)
-        {
-            printf(" ");
-        }
-        for(int j = 0;  j < i + 1;  j++)
-        {
-            printf("#");
-        }
-        printf(" ");
+     int a = 10, b = 20;
 
-         for(int k = 0;  k < i + 1;  k++)
-        {
-            printf("#");
-        }
+    printf("Before Swap: A: %d ||  B : %d\n", a , b);
 
-        printf("\n");
-    }
+    // Swaping;
+    a = a + b;
+    b = a - b;
+    a = a - b;
+
+    printf("After Swaping: A:%d || B:%d\n", a ,b);
+
+    return 0;
 }
