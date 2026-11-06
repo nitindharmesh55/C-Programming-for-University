@@ -10,6 +10,16 @@ int main(void)
     // printf("%d", number);
     // return 0;
 
+//     srand() sets the starting seed for the random number generator.
+
+
+
+// time(NULL) gives the current time in seconds.
+
+
+
+// This makes the sequence different when you run the program at different times.
+
     time_t now = time(NULL);
     struct tm *current =  localtime(&now);
     printf("%s", asctime(current));
@@ -26,7 +36,7 @@ int main(void)
     printf("Second: %d\n", current->tm_sec);
 
 
-    /
+    
 
     return 0;
 }
